@@ -2,27 +2,28 @@ import ProfileCard from "./ProfileCard";
 import SiriImage from "./images/siri.png";
 import AlexaImage from "./images/alexa.png";
 import CortanaImage from "./images/cortana.png";
-import "bulma/css/bulma.css";
+import "bulma/css/bulma.css"
 
 function App() {
     return (
         <div>
             <div>Personal Digital Assistants</div>
+
             <div className="container">
                 <section className="section">
-                    <div className=""columns>
-                        <div className="column is-2">
+                    <div className="columns">
+                        <div className="column is-3">
                         <ProfileCard title="Siri" handle="@Siri6" image={SiriImage} />
                         </div>
-                        <div className="column is-2">
+                        <div className="column is-3">
                         <ProfileCard title="Alexa" handle="@Alexa23" image={AlexaImage} />
                         </div>
-                        <div className="column is-2">
-                        <ProfileCard title="Cortana" handle="@cortana8" image={CortanaImage} />                      
+                        <div className="column is-3">
+                        <ProfileCard title="Cortana" handle="@cortana8" image={CortanaImage} />
                         </div>
                     </div>
                 </section>
-            </div>
+            </div>         
         </div>
     );
 }
