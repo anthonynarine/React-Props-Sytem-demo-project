@@ -62,7 +62,7 @@ Project walkthrough
                 are including the images for our project. 
 
         4. using an image hosted somewhere else online
-           just treat it like a normal image and put in the URL
+           treat it like a normal image and put add the URL
 
           eg <image src ="https://picsun.photos/200/300 />
 
@@ -70,6 +70,26 @@ Project walkthrough
                 <ProfileCard title="Siri" handle="@Siri6" image={SiriImage} />
 
         6. Update file that has (for this example)ProfileCard component function
-           
-            
 
+  ~ variable name "image"       function ProfileCard({title, handle, image}) {  
+    added                           return (
+                                        <div>
+                                        <img src={image} alt="pda logo"/>  
+                                        <div>Title is {title}</div>
+                                        <div>Handle is {handle}</div>
+                                        </div>
+                                );}
+ ~ if an image alt tag is not provided React gets annyoned and throws a warning 
+                
+
+                ~ Styling React Projects ~ 
+        1. install the CSS library using npm, import the CSS file
+                ~ npm install bulma
+        
+        2. in App.js import bulma
+                bulma is located in node_modules. 
+                We only need one file bulma/css/bulma.css
+        3. import above file
+                ~ import bulma/css/bulma.css;
+                  .css is need for the import b/c we are
+                  importing a no js file.  
