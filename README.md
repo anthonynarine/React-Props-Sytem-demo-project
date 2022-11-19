@@ -91,5 +91,17 @@ Project walkthrough
                 We only need one file bulma/css/bulma.css
         3. import above file
                 ~ import bulma/css/bulma.css;
-                  .css is need for the import b/c we are
+                
+                ~ .css is need for the import b/c we are
                   importing a no js file.  
+
+        NOTE the import case here
+                when we import Folders or Files  out of the node modules
+                directory, we do not have to use a relative path, so 
+                we no dot slash. 
+        
+        ~ Modifying The Cards contents ~
+
+        1. Add the div tags to the cards
+           a) they must match exactly as the css
+           b) We will use className not class b/c we are using jsx 

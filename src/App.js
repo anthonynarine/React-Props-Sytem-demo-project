@@ -8,9 +8,21 @@ function App() {
     return (
         <div>
             <div>Personal Digital Assistants</div>
-            <ProfileCard title="Siri" handle="@Siri6" image={SiriImage} />
-            <ProfileCard title="Alexa" handle="@Alexa23" image={AlexaImage} />
-            <ProfileCard title="Cortana" handle="@cortana8" image={CortanaImage} />
+            <div className="container">
+                <section className="section">
+                    <div className=""columns>
+                        <div className="column is-2">
+                        <ProfileCard title="Siri" handle="@Siri6" image={SiriImage} />
+                        </div>
+                        <div className="column is-2">
+                        <ProfileCard title="Alexa" handle="@Alexa23" image={AlexaImage} />
+                        </div>
+                        <div className="column is-2">
+                        <ProfileCard title="Cortana" handle="@cortana8" image={CortanaImage} />                      
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     );
 }
